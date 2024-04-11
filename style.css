@@ -1,0 +1,223 @@
+/* Adicione a seguinte regra de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 300px; /* Reduz a altura do cabeçalho para telas menores */
+    }
+
+    .menu {
+        flex-direction: column; /* Altera a direção do flex para uma coluna em telas menores */
+        align-items: center; /* Centraliza os itens na vertical */
+    }
+
+    .logo img {
+        margin: 20px 0; /* Ajusta a margem do logo para telas menores */
+    }
+
+    .menu-items {
+        margin-top: 20px; /* Adiciona margem superior para os itens do menu */
+    }
+
+    .menu-items a {
+        margin-left: 0; /* Remove a margem esquerda dos itens do menu */
+        margin-top: 10px; /* Adiciona margem superior para separar os itens do menu */
+    }
+
+    .content {
+        flex-direction: column; /* Altera a direção do flex para uma coluna em telas menores */
+    }
+
+    .card {
+        width: 80%; /* Define a largura dos cartões para preencher a largura da tela em telas menores */
+        margin: 0 auto 20px; /* Centraliza os cartões horizontalmente */
+    }
+
+    .card-img img {
+        width: 150px; /* Reduz o tamanho da imagem do cartão para telas menores */
+        height: 150px;
+        margin: 20px 0; /* Ajusta a margem da imagem do cartão */
+    }
+}
+
+/* Adicione a seguinte regra de mídia para telas muito pequenas, como smartphones em orientação retrato */
+@media screen and (max-width: 480px) {
+    .title-header {
+        font-size: 1.5em; /* Reduz o tamanho do título do cabeçalho para telas muito pequenas */
+    }
+
+    .menu-items a {
+        font-size: 1.5em; /* Reduz o tamanho do texto do menu para telas muito pequenas */
+    }
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content{
+    background-color: #eef0f2;
+    width: auto;
+}
+
+.header{
+    background-image: url(img/wall1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b1c8d2;
+    height: 500px;
+}
+
+.title-header{
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logo img{
+    width: 100px;
+    border-radius: 20px;
+    margin: 30px 0 0 30px ;
+    
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-left: 50px;
+}
+
+.menu-items a:hover{
+    border-bottom: 3px solid #d2e3eb;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: auto;
+    margin: 0 40px 0 40px;
+    padding: 15px;     
+    background-color: #d2e3eb ;
+    color: #fff;   
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    width: 200px;
+    height: 200px;
+    margin: 30px 0 30px 0 ;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-info p{
+    color: black;
+    font-weight: bold;
+    margin: 0 20px 0 20px;
+    
+}
+
+.card-buy{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.card-buy a{
+    text-decoration: none;
+    background-color: green;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-buy a:hover{
+    text-decoration: none;
+    background-color: #d2e3eb;
+    border: 2px solid green;
+    color: green;
+
+    
+
+}
+
+.footer{
+    background-color: #bed6e1 ;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.footer-msg{
+  width: auto; 
+ text-align: center;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea{
+    width: 300px;
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-msg button{
+    width: 100%;
+    height: 40px;
+    background-color: #1100ff;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+}
