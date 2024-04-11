@@ -68,8 +68,8 @@ body{
 .content{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .card{
@@ -130,6 +130,17 @@ body{
     
 
 }
+
+.content-mid{
+    background-image: url(img/wall2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
+
+
 
 .footer{
     background-color: #bed6e1 ;
