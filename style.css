@@ -17,6 +17,7 @@ body{
     background-size: cover;
     background-color: #b1c8d2;
     height: 500px;
+    
 }
 
 .title-header{
@@ -68,13 +69,31 @@ body{
 .content{
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
+}
+
+.searchBar{
+    text-align: center;
+    margin: 40px 0 0 0 ;
+}
+
+.searchBar input{
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 28px;
+}
+
+.searchBar p{  
+
+    font-size: 28px;
 }
 
 .card{
     width: auto;
-    margin: 0 40px 0 40px;
+    margin: 0 40px 20px 40px;
     padding: 15px;     
     background-color: #d2e3eb ;
     color: #fff;   
@@ -142,11 +161,17 @@ body{
 
 
 
+
+
 .footer{
     background-color: #bed6e1 ;
     display: flex;
     padding: 40px;
     justify-content: space-between;
+}
+
+.footer-menu ul li{
+    list-style-type: none;
 }
 
 .footer-msg{
@@ -181,3 +206,25 @@ textarea{
     font-size: 18px;
     color: white;
 }
+
+/*About*/
+
+.about{
+    margin: 0px 50px 30px 30px;
+}
+
+.about h2{
+    margin: 0;
+}
+
+.about p{
+    font-size: 28px;
+}
+
+.title-about{
+    text-align: center;
+    font-size: 32px;
+}
+
+/*Products*/
+
