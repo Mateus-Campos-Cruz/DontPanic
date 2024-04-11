@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-image: url(img/wall1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b1c8d2;
+    height: 300px; /* Reduz a altura do cabeçalho para telas menores */
+}
+
+.title-header {
+    color: #fff;
+    font-size: 1.5em; /* Reduz o tamanho do título do cabeçalho para telas menores */
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex para uma coluna em telas menores */
+    align-items: center; /* Centraliza os itens na vertical */
+}
+
+.logo img {
+    width: 80px; /* Reduz o tamanho do logo para telas menores */
+    border-radius: 10px;
+    margin: 20px 0; /* Ajusta a margem do logo para telas menores */
+}
+
+.menu-items {
+    margin-top: 20px; /* Adiciona margem superior para os itens do menu */
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em; /* Reduz o tamanho do texto do menu para telas menores */
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-top: 10px; /* Adiciona margem superior para separar os itens do menu */
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex para uma coluna em telas menores */
+    justify-content: space-between;
+    margin-top: 20px; /* Ajusta a margem superior para telas menores */
+    margin-bottom: 20px; /* Ajusta a margem inferior para telas menores */
+}
+
+.card {
+    width: 80%; /* Define a largura dos cartões para preencher a largura da tela em telas menores */
+    margin: 0 auto 20px; /* Centraliza os cartões horizontalmente */
+    padding: 15px;     
+    background-color: #d2e3eb;
+    color: #fff;   
+    border-radius: 20px; /* Reduz o raio da borda dos cartões para telas menores */
+    box-shadow: 5px 5px 5px gray;
+}
+
+.card-img img {
+    width: 150px; /* Reduz o tamanho da imagem do cartão para telas menores */
+    height: 150px;
+    margin: 20px auto; /* Centraliza a imagem do cartão */
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-info p {
+    color: black;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.card-buy {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card-buy a {
+    text-decoration: none;
+    background-color: green;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-buy a:hover {
+    text-decoration: none;
+    background-color: #d2e3eb;
+    border: 2px solid green;
+    color: green;
+}
+
+.footer {
+    background-color: #bed6e1;
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex para uma coluna em telas menores */
+    padding: 20px;
+}
+
+.footer-msg {
+    width: 100%; /* Define a largura da mensagem do rodapé para preencher a largura da tela */
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 100%; /* Define a largura dos campos de entrada para preencher a largura da tela */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-msg button {
+    width: 100%;
+    height: 40px;
+    background-color: #1100ff;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+}
